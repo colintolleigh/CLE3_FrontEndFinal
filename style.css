@@ -1,0 +1,117 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav div{
+    flex-grow:1;
+    text-align:center;
+    background-color:#A8F06A;
+    padding:20px 0;
+    cursor:pointer;
+    transition: all 0.4s ease-out;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+nav div:hover, nav div.selected {
+    background-color: #414BB2;
+    display: block;
+}
+
+nav div:hover a,
+nav div.selected a {
+    color: #A8F06A;
+
+}
+
+div {
+    display: block;
+}
+
+
+div, section {
+    box-sizing:border-box;
+}
+
+
+
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+    background-color: #414BB2;
+    display: block;
+}
+
+header {
+    background-color: #414BB2;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header {
+    display: flex;
+    height: auto;
+    width: 70%;
+}
+
+
+.navigation {
+    position: sticky;
+    font-family: 'Rammetto One', cursive;
+    color: black;
+    left: 0;
+    top: 0;
+}
+
+
+h1 {
+    font-family: 'Rammetto One', cursive;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #A8F06A;
+    color:black;
+    font-family: Arial;
+}
+
+p {
+    margin: 20px;
+}
+
+img {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    padding: 50px;
+    background-color: #414BB2;
+    color: #A8F06A;
+    text-align: center;
+    font-size: large;
+    font-family: 'Rammetto One', cursive;
+}
+
+
+@media screen and (max-width: 550px) {
+    nav {
+        display:block;
+    }
+}
+
